@@ -13,7 +13,7 @@ function setup() {
   translate(width/2, height/2);
 
   colorMode(HSB);
-  //ambientLight(150);
+  ambientLight(150);
 
   // for(let i = 0; i < total+1; i++){
   //   points[i] = new Array(total+1);
@@ -87,7 +87,7 @@ function draw() {
       let rsin1 = r21 * sin(theta+h);
 
       let hu = map(i, 0, total, 0, 255*6);
-      //fill((hu + offset) % 255 , 128, 128);
+      fill((hu + offset) % 255 , 128, 128);
       beginShape(TRIANGLE_STRIP);
       for (let j = 0; j < total+1; j++) {
         let phi = map(j, 0, total, -PI, PI);
