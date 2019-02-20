@@ -69,9 +69,9 @@ function draw() {
     rotateY(angleY);
 
     //fill(255);
-    //noStroke();
+    noStroke();
     //sphere(200);
-    stroke(255);
+    //stroke(255);
     noFill();
     offset += 5;
     let h = PI / total;
